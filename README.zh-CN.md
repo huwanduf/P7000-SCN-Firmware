@@ -17,6 +17,18 @@
 
 **v3.4.3 是已通过离线验证的最新候选，新电池菜单与关机记忆尚待本版实机验收。** 历史版本 v3.3 的主要功能已有使用者实机反馈；旧版结果不代表新版已经实测。
 
+
+### 历史版本独立下载
+
+每版均有独立 Release 及匹配固件的标签，不再与 v3.4.3 附件混放。
+
+| 版本 | 主要适配功能 | 下载页 |
+|---|---|---|
+| v1 | 适合只需要四个基础场景 RAW+JPEG、其余参数继续使用原厂策略的用户。 | [历史归档](https://github.com/huwanduf/P7000-SCN-Firmware/releases/tag/v1) |
+| v2 | 适合希望全 SCN 可选 RAW+JPEG，同时保留原厂 WB/ISO 和场景控制的用户。 | [历史归档](https://github.com/huwanduf/P7000-SCN-Firmware/releases/tag/v2) |
+| v3.2.2 | 适合需要共享 WB/ISO 和记忆及兼容我的菜单控制，同时保留原始场景优化校准的用户。 | [历史归档](https://github.com/huwanduf/P7000-SCN-Firmware/releases/tag/v3.2.2) |
+| v3.3 | 适合需要 WB ±6 和风景自动闪光、但希望保持原厂电池显示的用户。 | [历史归档](https://github.com/huwanduf/P7000-SCN-Firmware/releases/tag/v3.3) |
+
 ## 安装：先官方 1.2，再复制 firmware 文件夹
 
 1. **首次使用本项目，先把相机升级至尼康官方 1.2。** 原厂已经是 1.2 的相机可跳过这一步。[官方 1.2 下载与说明](https://downloadcenter.nikonimglib.com/zh-cn/download/fw/45.html)。

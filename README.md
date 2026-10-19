@@ -17,6 +17,18 @@ Based on official firmware **1.2**. The current project release is **v3.4.3**; t
 
 **v3.4.3 is the latest offline-validated candidate. Its new battery settings and power-cycle persistence still require validation on a camera.** Earlier v3.3 features received user testing; those results do not establish that this release has passed hardware acceptance.
 
+
+### Historical releases
+
+Each archive has its own Release and matching tag. None of these ZIPs is attached to v3.4.3.
+
+| Version | Included features | Release |
+|---|---|---|
+| v1 | For the original scene WB/ISO behavior with RAW+JPEG in just these four scenes. | [Historical archive](https://github.com/huwanduf/P7000-SCN-Firmware/releases/tag/v1) |
+| v2 | For RAW+JPEG across the SCN menu while retaining the original WB/ISO and scene controls. | [Historical archive](https://github.com/huwanduf/P7000-SCN-Firmware/releases/tag/v2) |
+| v3.2.2 | For shared WB/ISO and compatible My Menu controls while retaining native scene Picture Control. | [Historical archive](https://github.com/huwanduf/P7000-SCN-Firmware/releases/tag/v3.2.2) |
+| v3.3 | For the expanded SCN controls without the later custom battery UI. | [Historical archive](https://github.com/huwanduf/P7000-SCN-Firmware/releases/tag/v3.3) |
+
 ## Install: official 1.2 first, then copy the firmware folder
 
 1. **Before first installing this project, update the camera to Nikon's official 1.2.** Skip this step if it already runs official 1.2. [Official download and instructions](https://downloadcenter.nikonimglib.com/en/download/fw/45.html).

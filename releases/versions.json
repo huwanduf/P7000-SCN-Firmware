@@ -7,7 +7,10 @@
     "changes": "人像、风景、近摄、食物开放 NRW+Fine/Normal/Basic JPEG。",
     "limitations_or_reverted": "RAW-only、场景自动选择及其余场景维持原限制。",
     "hardware_evidence": "用户随后明确确认升级成功，四个场景均实拍验证；未独立检查用户样片。",
-    "camera_display_version": "1.2"
+    "camera_display_version": "1.2",
+    "release_url": "https://github.com/huwanduf/P7000-SCN-Firmware/releases/tag/v1",
+    "sd_download_url": "https://github.com/huwanduf/P7000-SCN-Firmware/releases/download/v1/P7000-v1-SD.zip",
+    "distribution": "independent_historical_release"
   },
   {
     "version": "v2",
@@ -17,7 +20,10 @@
     "changes": "扩展到18个场景菜单项，包含17个手动场景和场景自动选择。",
     "limitations_or_reverted": "保留原生JPEG尺寸及特殊连拍兼容限制，不是全部特殊组合均支持RAW。",
     "hardware_evidence": "用户随后报告“完美”；不等于所有18场景和特殊组合逐项验证。",
-    "camera_display_version": "1.2"
+    "camera_display_version": "1.2",
+    "release_url": "https://github.com/huwanduf/P7000-SCN-Firmware/releases/tag/v2",
+    "sd_download_url": "https://github.com/huwanduf/P7000-SCN-Firmware/releases/download/v2/P7000-v2-SD.zip",
+    "distribution": "independent_historical_release"
   },
   {
     "version": "v3",
@@ -67,7 +73,10 @@
     "changes": "SCN优化校准灰显，恢复场景生成的锐度、饱和度和对比度；撤掉专用页面。",
     "limitations_or_reverted": "保留WB/ISO及测光/失真/ADL；最低快门使用场景策略，新增连拍暂缓，卡顿仍在。",
     "hardware_evidence": "用户确认“完全可用”，继而请求性能研究；这是用户反馈，非逐场景独立验证。",
-    "camera_display_version": "1.2"
+    "camera_display_version": "1.2",
+    "release_url": "https://github.com/huwanduf/P7000-SCN-Firmware/releases/tag/v3.2.2",
+    "sd_download_url": "https://github.com/huwanduf/P7000-SCN-Firmware/releases/download/v3.2.2/P7000-v3.2.2-SD.zip",
+    "distribution": "independent_historical_release"
   },
   {
     "version": "v3.3",
@@ -77,7 +86,10 @@
     "changes": "WB两轴扩大到±6并迁移记忆；风景可选自动/关闭闪光；减少WB回调中的重复计算。",
     "limitations_or_reverted": "风景默认仍关闭，重新入场按场景程序初始化；未证明消除菜单/取景黑屏。",
     "hardware_evidence": "用户确认除卡顿外其他非常完美；无逐项独立实拍报告。",
-    "camera_display_version": "1.2"
+    "camera_display_version": "1.2",
+    "release_url": "https://github.com/huwanduf/P7000-SCN-Firmware/releases/tag/v3.3",
+    "sd_download_url": "https://github.com/huwanduf/P7000-SCN-Firmware/releases/download/v3.3/P7000-v3.3-SD.zip",
+    "distribution": "independent_historical_release"
   },
   {
     "version": "v3.4",
