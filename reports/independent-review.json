@@ -1,0 +1,105 @@
+{
+  "status": "passed_read_only_review",
+  "unresolved_high_confidence_findings": [],
+  "checks": {
+    "ui": {
+      "status": "passed",
+      "total_cases": 371,
+      "source_hashes_current": true
+    },
+    "osd": {
+      "status": "passed",
+      "total_cases": 218,
+      "source_hashes_current": true
+    },
+    "storage": {
+      "status": "passed",
+      "total_cases": 20544,
+      "source_hashes_current": true,
+      "tested_SEC0_sha256": "bb16233d670534e97eac0fc0ef182250ac361cef8052f2a8f9f143d68f00da7a",
+      "incoming_audit": [
+        {
+          "image": "baseline",
+          "source": "0x401b2628",
+          "target": "0x40218e5c",
+          "kind": "branch"
+        },
+        {
+          "image": "baseline",
+          "source": "0x401c6a0c",
+          "target": "0x40218db4",
+          "kind": "branch"
+        },
+        {
+          "image": "baseline",
+          "source": "0x401dbe4c",
+          "target": "0x40218e34",
+          "kind": "branch"
+        },
+        {
+          "image": "baseline",
+          "source": "0x40215d28",
+          "target": "0x40218ba0",
+          "kind": "branch"
+        },
+        {
+          "image": "candidate",
+          "source": "0x401b2628",
+          "target": "0x40218e7c",
+          "kind": "branch"
+        },
+        {
+          "image": "candidate",
+          "source": "0x401c6a0c",
+          "target": "0x40218db4",
+          "kind": "branch"
+        },
+        {
+          "image": "candidate",
+          "source": "0x401dbe4c",
+          "target": "0x40218e4c",
+          "kind": "branch"
+        },
+        {
+          "image": "candidate",
+          "source": "0x40215d28",
+          "target": "0x40218ba0",
+          "kind": "branch"
+        }
+      ]
+    }
+  },
+  "native_interworking": "GET BLX + SET guard BX to odd Thumb pointers; leaf callbacks BX ARM LR; r0-r3 only",
+  "native_storage": "P7C4 owns control bits11/12; retired bit13 rejected; P7C3 retainsbit11 and defaultsbit12; P7C2/P7C1 retired bits cleared; existing12byte outer save span retained",
+  "OSD_mapping": {
+    "100": 5,
+    "80": 4,
+    "65": 4,
+    "50": 3,
+    "25": 2,
+    "5": "one red",
+    "2": "one red"
+  },
+  "display_preferences": "26 _monitorView INFO_ON4096 / INFO_OFF4098;69 current single-photo page4096 only",
+  "source_hashes": {
+    "work/p7000-v3.4.3/storage/build_native.py": "e1ae95cedc8f2f074f8c0acf821080808116b11ccc2dfe62ea19c070ccfba54c",
+    "work/p7000-v3.4.3/storage/settings.s": "572aae2c0a39e74b4c6a77ca4d8b4a885ee7e3a26d7e1ebe97a323c93aff0c2b",
+    "work/p7000-v3.4.3/storage/persistence.s": "beadd4417bb033068f3a3cba29befc45da63e2c957d0d29846b35c96e08442a5",
+    "work/p7000-v3.4.3/storage/verify_storage.py": "4e1f5b057f6178ccde15a859eca983373505682cb01c0e11b642394c23bd2065",
+    "work/p7000-v3.4.3/patch_osd.py": "b1aceb43d677d9029c32b060e66d65a02f66459c370f8919b7503600ed62099c",
+    "work/p7000-v3.4.3/verify_osd.py": "88a41862271a93e530298b023106109d914c533eb31ff57620a5ec9eaa7d8224",
+    "work/p7000-v3.4.3/ui/patch_settings.py": "a11b589a521c4ff5944695c34e81cfd752506bd4932c265a1ef4eaa59861efb6",
+    "work/p7000-v3.4.3/ui/verify_settings.py": "855eb2efecdee08fea590b5b22b40088ab844edc13f31fbce1fdd1ec00229d58",
+    "work/p7000-v3.4.3/ui/vector5.py": "54ace424af48c91a5bc7c022ba5fe5249e736294a05f245a2cf793ab6cd01996",
+    "work/p7000-v3.4.3/validate.py": "8e21cc868fed1e9f4a7fb23cb16bfdb79dbe319f1d6bae5191b34fc03c95ff6f",
+    "work/p7000-v3.4.3/build.py": "6a22eb1ee6bf0c11531eed40605a21a614f2d52e57e22d6f061d5c2c414d3bd7",
+    "work/p7000-v3.4.3/common.py": "8bb241d3ce5fbbd1eccffeeaca2df6399d38584c9d40b38f4d1399a4ada6c73d"
+  },
+  "limits": [
+    "read-only source/linked layout review, no test reexecution",
+    "bounded ISA/GUI execution proof is component evidence, not physical CPU or rendering",
+    "physical ARM/Thumb callbacks and power-cycle storage remain unverified",
+    "native OSD overlap and actual display mode source remain hardware boundaries",
+    "MCU precision/freshness not improved or runtime verified"
+  ]
+}

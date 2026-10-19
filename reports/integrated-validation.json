@@ -1,0 +1,590 @@
+{
+  "status": "passed",
+  "candidate_sha256": "b147246ded1d43ff365a9e31f37565ff43676e4dc23e229946edb73e091040de",
+  "baseline_sha256": "89fef5c84dba57897be26cb938c50693482997b1fcdef396ebb0f26301586900",
+  "bytes": 20225932,
+  "source_bindings": {
+    "work/p7000-v3.4.3/battery/verify_request_guard.py": "21420c4f8ca4592a596e685496e8072cf8214d2e22ab43a2bf5f4db784776167",
+    "work/p7000-v3.4.3/build.py": "6a22eb1ee6bf0c11531eed40605a21a614f2d52e57e22d6f061d5c2c414d3bd7",
+    "work/p7000-v3.4.3/common.py": "8bb241d3ce5fbbd1eccffeeaca2df6399d38584c9d40b38f4d1399a4ada6c73d",
+    "work/p7000-v3.4.3/package.py": "42f1b07bbdba132b06a348f3bd20897f4d79fe149f3abdcf4dde885743eb7261",
+    "work/p7000-v3.4.3/patch_osd.py": "b1aceb43d677d9029c32b060e66d65a02f66459c370f8919b7503600ed62099c",
+    "work/p7000-v3.4.3/storage/build_native.py": "e1ae95cedc8f2f074f8c0acf821080808116b11ccc2dfe62ea19c070ccfba54c",
+    "work/p7000-v3.4.3/storage/persistence.s": "beadd4417bb033068f3a3cba29befc45da63e2c957d0d29846b35c96e08442a5",
+    "work/p7000-v3.4.3/storage/settings.s": "572aae2c0a39e74b4c6a77ca4d8b4a885ee7e3a26d7e1ebe97a323c93aff0c2b",
+    "work/p7000-v3.4.3/storage/verify_storage.py": "4e1f5b057f6178ccde15a859eca983373505682cb01c0e11b642394c23bd2065",
+    "work/p7000-v3.4.3/ui/patch_settings.py": "a11b589a521c4ff5944695c34e81cfd752506bd4932c265a1ef4eaa59861efb6",
+    "work/p7000-v3.4.3/ui/vector5.py": "54ace424af48c91a5bc7c022ba5fe5249e736294a05f245a2cf793ab6cd01996",
+    "work/p7000-v3.4.3/ui/vector7.py": "7b2055d26e415788fee377cebe349727687694563d32acf9736b32151e880249",
+    "work/p7000-v3.4.3/ui/verify_settings.py": "855eb2efecdee08fea590b5b22b40088ab844edc13f31fbce1fdd1ec00229d58",
+    "work/p7000-v3.4.3/validate.py": "8e21cc868fed1e9f4a7fb23cb16bfdb79dbe319f1d6bae5191b34fc03c95ff6f",
+    "work/p7000-v3.4.3/verify_osd.py": "88a41862271a93e530298b023106109d914c533eb31ff57620a5ec9eaa7d8224"
+  },
+  "components": {
+    "ui/validation.json": {
+      "status": "passed",
+      "total_cases": 371,
+      "groups": {
+        "independent_both_rows_initialization_four_combinations": 4,
+        "full_notify_hidden_row_edit_is_pending_and_independent": 4,
+        "full_notify_shown_row_edit_is_pending_and_independent": 4,
+        "left_boundary_stops_at_battery_column": 4,
+        "cross_new_and_original_columns_aligns_factory_cursor": 4,
+        "factory_confirm_commits_two_new_and_six_original_fields": 4,
+        "menu_discards_new_flags_without_any_set": 4,
+        "reentry_reloads_persisted_values_after_cancel": 4,
+        "denied_native_set_readback_restores_actual_state": 4,
+        "menu_from_each_new_column_row_never_commits": 12,
+        "full_rotary_path_clamps_four_columns": 24,
+        "original_six_checkbox_key_paths_differential": 34,
+        "other_8bit_keys_factory_dispatch": 241,
+        "factory_tick_focus_and_blur_per_row": 12,
+        "five_bin_header_original_geometry_no_text_or_polling": 1,
+        "independent_white_and_optional_red_shape_decode": 9,
+        "shared_five_bin_mapping_and_low_color_metadata": 2
+      },
+      "executed_steps": 97966,
+      "source_hashes": {
+        "work/p7000-v3.4.3/ui/verify_settings.py": "855eb2efecdee08fea590b5b22b40088ab844edc13f31fbce1fdd1ec00229d58",
+        "work/p7000-v3.4.3/ui/patch_settings.py": "a11b589a521c4ff5944695c34e81cfd752506bd4932c265a1ef4eaa59861efb6",
+        "work/p7000-v3.4.3/ui/vector5.py": "54ace424af48c91a5bc7c022ba5fe5249e736294a05f245a2cf793ab6cd01996",
+        "work/p7000-v3.4.2/ui/verify_settings.py": "e5976c3ac535a9c6067d729e8485cbb48036e89b75b97a36c5a3f196284ab1ba",
+        "work/p7000-v3.4.1/ui/patch_battery_ui.py": "b9ba801bcb6e2df805dfdc054b6037b619747e81bfe3baac8ae1f1ce7921d3b8",
+        "work/p7000-v3.4.1/ui/vector_battery.py": "2d2152ab17f0a9a44823ca091abd501c7812873127a72538703b9ee08894cffc",
+        "work/p7000-v3.4/ui/swf_tags.py": "37377dfa60fae4e619d46d16382e821e99dcb9ead088d1f2049cc47c64e2b11c",
+        "work/p7000-v3.1/ui/patch_ui.py": "f27103e2d1a60ef926b802588cf904186687f60f20ce83f155dbb4f0ab6cdec4"
+      },
+      "fws_hashes": {
+        "73": {
+          "input": "623830bf6a8a7da291ef17f71985036e0dde18f953ff0305d35a247e273981b9",
+          "output": "80c61e5b5e71d7c8af91c5bf614c46bcf2bf3c46d9fbc7e53837555f455458d7"
+        }
+      },
+      "resources": {
+        "73": {
+          "resource": 73,
+          "input_sha256": "623830bf6a8a7da291ef17f71985036e0dde18f953ff0305d35a247e273981b9",
+          "factory_sha256": "14b175c6c974de52d4e48efad7dc5575c5d27cfc1cef91bb78ff45b3b8f95770",
+          "output_sha256": "80c61e5b5e71d7c8af91c5bf614c46bcf2bf3c46d9fbc7e53837555f455458d7",
+          "changes": [
+            {
+              "function": "initialize",
+              "reason": "Initialize independent page-local battery column after factory fields",
+              "original_body_start": 144218,
+              "old_bytes": 1208,
+              "new_bytes": 2657
+            },
+            {
+              "function": "cursorMoveChange",
+              "reason": "Battery column -1 only; factory columns retain original handlers",
+              "original_body_start": 151310,
+              "old_bytes": 540,
+              "new_bytes": 598
+            },
+            {
+              "function": "cursorNowChange",
+              "reason": "Battery column -1 only; factory columns retain original handlers",
+              "original_body_start": 151869,
+              "old_bytes": 540,
+              "new_bytes": 600
+            },
+            {
+              "function": "checkMark",
+              "reason": "Battery column -1 only; factory columns retain original handlers",
+              "original_body_start": 149430,
+              "old_bytes": 912,
+              "new_bytes": 1174
+            },
+            {
+              "function": "checkSet",
+              "reason": "Battery column -1 only; factory columns retain original handlers",
+              "original_body_start": 150361,
+              "old_bytes": 930,
+              "new_bytes": 962
+            },
+            {
+              "function": "setMoniter",
+              "reason": "Battery column -1 only; factory columns retain original handlers",
+              "original_body_start": 152428,
+              "old_bytes": 1086,
+              "new_bytes": 1147
+            },
+            {
+              "function": "setCursor",
+              "reason": "Battery column -1 only; factory columns retain original handlers",
+              "original_body_start": 153533,
+              "old_bytes": 168,
+              "new_bytes": 242
+            },
+            {
+              "function": "leftCursor",
+              "reason": "Extend original minimum from0 to-1, retaining factory clamp and rotary deltas",
+              "original_body_start": 148649,
+              "old_bytes": 254,
+              "new_bytes": 242
+            }
+          ],
+          "blocks": [
+            {
+              "sprite": 75,
+              "old_actions": 15225,
+              "new_actions": 17209
+            }
+          ],
+          "graphics": {
+            "sprite_id": 95,
+            "root_depth": 4,
+            "container": "_mc_v343BatteryColumn",
+            "vector": {
+              "sprite_id": 94,
+              "shape_ids": [
+                89,
+                90,
+                91,
+                92
+              ],
+              "bar_sprite_id": 93,
+              "red_sprite_id": null,
+              "red_bar_name": null,
+              "bar_names": [
+                "_bar1",
+                "_bar2",
+                "_bar3",
+                "_bar4",
+                "_bar5"
+              ],
+              "root_depth": 4,
+              "container": "_unused",
+              "x": 570,
+              "y": 8,
+              "width": 48,
+              "height": 24,
+              "global_bounds": [
+                570,
+                618,
+                8,
+                32
+              ],
+              "bar_width": 6,
+              "bar_pitch": 7,
+              "bar_x": [
+                5,
+                12,
+                19,
+                26,
+                33
+              ],
+              "native_mapping": {
+                "100": 5,
+                "80": 4,
+                "65": 4,
+                "50": 3,
+                "25": 2,
+                "5": 1,
+                "2": 1
+              },
+              "red_native_estimates": [],
+              "shape_tag": 22,
+              "origin": "new five-bin vectors in camera-tested outline; not original Nikon art",
+              "precision": "native coarse estimates grouped for display; no finer measurement"
+            },
+            "header_bounds": [
+              366,
+              414,
+              201,
+              225
+            ],
+            "checkbox_positions": [
+              [
+                370,
+                256
+              ],
+              [
+                370,
+                308
+              ]
+            ],
+            "cursor_cell_global": [
+              360,
+              420
+            ],
+            "new_column_index": -1,
+            "existing_columns": [
+              0,
+              1,
+              2
+            ],
+            "factory_checkbox_sprite": 11,
+            "original_layout_preserved": true,
+            "no_new_text": true,
+            "native_fields": [
+              4096,
+              4098
+            ],
+            "commit_policy": "page-local independent pending flags; confirm writes, MENU cancels",
+            "scope": "native rasterization/long wording overlap not emulated"
+          },
+          "all_cfg_targets_valid": true,
+          "native_get_fields": [
+            4096,
+            4098
+          ],
+          "native_set_fields": [
+            4096,
+            4098
+          ],
+          "no_timer": true,
+          "other_factory_action_blocks_preserved": true,
+          "original_layout_preserved": true,
+          "source_bound_factory_baseline": "db946841a6ded0be1ffce830bc2fb88868cd109c58931f7c5af971252ea0a4b2",
+          "scope": "Offline only; physical keys/native bridge/renderer not executed"
+        }
+      },
+      "verification_boundary": "actual complete notifyKeyDown and rotate handlers with original cursor/check/confirm code; factory initialize and renderer/native bridge are explicit stubs",
+      "not_modeled": [
+        "actual native GET/SET parser and Flash",
+        "hardware repeat scheduler/physical keys",
+        "native rasterization and long localized label overdraw",
+        "sleep/recording/photo preview lifecycle"
+      ]
+    },
+    "osd/validation.json": {
+      "status": "passed",
+      "total_cases": 218,
+      "groups": {
+        "actual_native_values_preferences_and_low_red": 208,
+        "unprompted_reads_limited_to_one_hz": 2,
+        "suspension_recovery_low_red": 2,
+        "hidden_parent_no_reads": 2,
+        "two_info_states_are_independent": 2,
+        "actual_monitor_state_read_and_immediate_refresh": 2
+      },
+      "executed_steps": 24382,
+      "source_hashes": {
+        "work/p7000-v3.4.3/verify_osd.py": "88a41862271a93e530298b023106109d914c533eb31ff57620a5ec9eaa7d8224",
+        "work/p7000-v3.4.3/patch_osd.py": "b1aceb43d677d9029c32b060e66d65a02f66459c370f8919b7503600ed62099c",
+        "work/p7000-v3.4.3/ui/vector5.py": "54ace424af48c91a5bc7c022ba5fe5249e736294a05f245a2cf793ab6cd01996",
+        "work/p7000-v3.4.1/ui/patch_battery_ui.py": "b9ba801bcb6e2df805dfdc054b6037b619747e81bfe3baac8ae1f1ce7921d3b8",
+        "work/p7000-v3.4/ui/verify_battery_ui.py": "22408d55300af23980815a46bb2280610dccd54709cae57ebad49b0ab852ab93"
+      },
+      "fws_hashes": {
+        "26": {
+          "input": "10a3273f94fffbe4cffcf2b63c71665d1648ed2836eddf1dec27dd1581e12673",
+          "output": "6a69164542858cccae9738e426df8b25eee11904594340928181b1547b9ef624"
+        },
+        "69": {
+          "input": "36bc8a42a6bde8751d85239963e7c2a9d7e48a5fa7e59364dfb2a4077ebfb5f7",
+          "output": "bb317c7d6076e176ce78ba96e42147fc6e10f169d7fa4bfecd68ec4200b18997"
+        }
+      },
+      "not_modeled": [
+        "MCU freshness or physical battery capacity",
+        "camera rasterizer and full native OSD overlaps",
+        "native bridge and display-state event source"
+      ],
+      "native_mapping": {
+        "100": 5,
+        "80": 4,
+        "65": 4,
+        "50": 3,
+        "25": 2,
+        "5": 1,
+        "2": 1
+      },
+      "red_levels": [
+        5,
+        2
+      ]
+    },
+    "storage/validation.json": {
+      "status": "passed",
+      "baseline_sha256": "89fef5c84dba57897be26cb938c50693482997b1fcdef396ebb0f26301586900",
+      "tested_SEC0_sha256": "bb16233d670534e97eac0fc0ef182250ac361cef8052f2a8f9f143d68f00da7a",
+      "tested_engine_sha256": "2c5eca64729c0f8ab04215a71f846cdc0f76118ae301fadb495e61edf5ec6adb",
+      "counts": {
+        "original_148_registry_rows_preserved": 148,
+        "three_rows_and_absent_ids": 8,
+        "Thumb_bool_GET_all_surrounding_bytes": 512,
+        "Thumb_SET_two_byte_safe_aligned_and_unaligned": 2048,
+        "invalid_SET_no_write_or_empty_string_overread": 44,
+        "actual_ARM_Thumb_SET_GET_dispatch_all_modes": 168,
+        "actual_native_4097_pure_cache_GET": 20,
+        "actual_engine_invalid_or_readonly_SET_no_state_write": 15,
+        "P7C4_encode_decode_all_axes_ISO_two_bits": 12168,
+        "P7C2_P7C3_migration_preserves_parameters_and_owned_bit": 270,
+        "P7C1_three_schema_migration": 900,
+        "P7C4_WB_ISO_validity_domain": 4096,
+        "P7C4_unowned_retired_bit_rejected": 4,
+        "original_control_validity_domain_preserved": 7,
+        "inverse_corruption_rejected": 128,
+        "actual_outer_checksum_restore_gate": 8
+      },
+      "total_cases": 20544,
+      "thumb_callback_instructions": 51968,
+      "source_hashes": {
+        "work/p7000-v3.4.3/storage/verify_storage.py": "4e1f5b057f6178ccde15a859eca983373505682cb01c0e11b642394c23bd2065",
+        "work/p7000-v3.4.3/storage/build_native.py": "e1ae95cedc8f2f074f8c0acf821080808116b11ccc2dfe62ea19c070ccfba54c",
+        "work/p7000-v3.4.3/storage/settings.s": "572aae2c0a39e74b4c6a77ca4d8b4a885ee7e3a26d7e1ebe97a323c93aff0c2b",
+        "work/p7000-v3.4.3/storage/persistence.s": "beadd4417bb033068f3a3cba29befc45da63e2c957d0d29846b35c96e08442a5",
+        "work/p7000-v3.4.2/routing/verify_setting_dispatch.py": "02a0bd422cad7358e6865bef692435e85d440ba6a0bfdb5ecdeaf38c633b59f3",
+        "work/p7000-v3.4/native/test_battery_components.py": "9a46217d3ffdbf5739e1b77fdd4acbb655a747898f92c68553db35da7c73fc3c",
+        "work/p7000-v3.2/persistence/test_persistence_components.py": "9f2c3a5052f3606af5c2bace18c899eb5c0b3324c6c1cd0b9ad124f1278ca340",
+        "work/p7000-v1/v1/inline-validation/a32_runner.py": "ee947451a7af20b91a1e0c6c19204d11738ac183c125fddcaefd70d364027f7e",
+        "work/p7000-v3.3/flash/landscape.s": "f2051e69358789b675d3e1c3b32a60b6f483e8d4940870a0dbefda7092bb989b"
+      },
+      "parts": {
+        ".battery_lookup": [
+          "0x40218ba0",
+          40
+        ],
+        ".battery_callbacks": [
+          "0x40218bc8",
+          100
+        ],
+        ".battery_rows": [
+          "0x40218c2c",
+          36
+        ],
+        ".wb_record_router": [
+          "0x40218db4",
+          200
+        ],
+        ".landscape_permission": [
+          "0x40218e7c",
+          32
+        ]
+      },
+      "symbols": {
+        "original_lookup_continue": "0x40215d2c",
+        "$a": "0x40218e7c",
+        "$d": "0x40218e94",
+        "$t": "0x40218bc8",
+        "get_bool": "0x40218bce",
+        "set_bool": "0x40218be8",
+        "bad": "0x40218c12",
+        "battery_lookup": "0x40218ba0",
+        "battery_rows": "0x40218c2c",
+        "battery_show_get": "0x40218bc9",
+        "battery_hidden_get": "0x40218bcd",
+        "battery_show_set": "0x40218be3",
+        "battery_hidden_set": "0x40218be7",
+        "battery_percent_get": "0x40218c17",
+        "legacy_record_after_first_load": "0x401c6a10",
+        "validated_controls": "0x401dbe18",
+        "commit_after_state_load": "0x401dbe50",
+        "wb_record_router": "0x40218db4",
+        "wb_migrate_commit": "0x40218e4c",
+        "original_scene_pass": "0x401b26a0",
+        "original_scene_check": "0x401b262c",
+        "landscape_permission": "0x40218e7c"
+      },
+      "incoming_audit": [
+        {
+          "image": "baseline",
+          "source": "0x401b2628",
+          "target": "0x40218e5c",
+          "kind": "branch"
+        },
+        {
+          "image": "baseline",
+          "source": "0x401c6a0c",
+          "target": "0x40218db4",
+          "kind": "branch"
+        },
+        {
+          "image": "baseline",
+          "source": "0x401dbe4c",
+          "target": "0x40218e34",
+          "kind": "branch"
+        },
+        {
+          "image": "baseline",
+          "source": "0x40215d28",
+          "target": "0x40218ba0",
+          "kind": "branch"
+        },
+        {
+          "image": "candidate",
+          "source": "0x401b2628",
+          "target": "0x40218e7c",
+          "kind": "branch"
+        },
+        {
+          "image": "candidate",
+          "source": "0x401c6a0c",
+          "target": "0x40218db4",
+          "kind": "branch"
+        },
+        {
+          "image": "candidate",
+          "source": "0x401dbe4c",
+          "target": "0x40218e4c",
+          "kind": "branch"
+        },
+        {
+          "image": "candidate",
+          "source": "0x40215d28",
+          "target": "0x40218ba0",
+          "kind": "branch"
+        }
+      ],
+      "record_bytes": 12,
+      "normal_PC_and_other_control_regions_unchanged": true,
+      "stubs": [
+        "bounded ASCII strcmp and decimal parser in native dispatch tests",
+        "memcpy only in outer restore tests"
+      ],
+      "limits": [
+        "bounded ARM/Thumb ISA interpreter; no physical CPU execution",
+        "no camera, SD, actual Flash write/power cycle, GUI or native MCU communication"
+      ],
+      "camera_written": false,
+      "card_written": false,
+      "firmware_emitted": false
+    }
+  },
+  "checks": {
+    "changed_bytes": 194228,
+    "native_changed_bytes": 336,
+    "incoming": [
+      {
+        "image": "base",
+        "source": "0x401b2628",
+        "target": "0x40218e5c",
+        "kind": "branch"
+      },
+      {
+        "image": "base",
+        "source": "0x401c6a0c",
+        "target": "0x40218db4",
+        "kind": "branch"
+      },
+      {
+        "image": "base",
+        "source": "0x401dbe4c",
+        "target": "0x40218e34",
+        "kind": "branch"
+      },
+      {
+        "image": "base",
+        "source": "0x40215d28",
+        "target": "0x40218ba0",
+        "kind": "branch"
+      },
+      {
+        "image": "candidate",
+        "source": "0x401b2628",
+        "target": "0x40218e7c",
+        "kind": "branch"
+      },
+      {
+        "image": "candidate",
+        "source": "0x401c6a0c",
+        "target": "0x40218db4",
+        "kind": "branch"
+      },
+      {
+        "image": "candidate",
+        "source": "0x401dbe4c",
+        "target": "0x40218e4c",
+        "kind": "branch"
+      },
+      {
+        "image": "candidate",
+        "source": "0x40215d28",
+        "target": "0x40218ba0",
+        "kind": "branch"
+      }
+    ],
+    "stable_native_regions": [
+      [
+        1074882528,
+        1074882824
+      ],
+      [
+        1074880192,
+        1074880284
+      ],
+      [
+        1074275208,
+        1074275260
+      ],
+      [
+        1074406784,
+        1074406808
+      ],
+      [
+        1075843728,
+        1075843776
+      ],
+      [
+        1073790508,
+        1073792256
+      ],
+      [
+        1075131012,
+        1075132308
+      ],
+      [
+        1074494052,
+        1074494496
+      ],
+      [
+        1075940432,
+        1075940548
+      ],
+      [
+        1075941052,
+        1075941792
+      ],
+      [
+        1075511600,
+        1075511876
+      ]
+    ],
+    "resources": [
+      {
+        "index": 73,
+        "file_length": 63238,
+        "uncompressed": 213294,
+        "header": {
+          "allocation_bytes": 213294,
+          "compressed_input_bytes": 63230,
+          "output_capacity": 213286,
+          "instructions": 54,
+          "limits": "Actual native header parsing/allocation sizing only; allocator and native inflater replaced by controlled Python stubs"
+        }
+      },
+      {
+        "index": 26,
+        "file_length": 321758,
+        "uncompressed": 683529,
+        "header": {
+          "allocation_bytes": 683529,
+          "compressed_input_bytes": 321750,
+          "output_capacity": 683521,
+          "instructions": 54,
+          "limits": "Actual native header parsing/allocation sizing only; allocator and native inflater replaced by controlled Python stubs"
+        }
+      },
+      {
+        "index": 69,
+        "file_length": 117240,
+        "uncompressed": 242269,
+        "header": {
+          "allocation_bytes": 242269,
+          "compressed_input_bytes": 117232,
+          "output_capacity": 242261,
+          "instructions": 54,
+          "limits": "Actual native header parsing/allocation sizing only; allocator and native inflater replaced by controlled Python stubs"
+        }
+      }
+    ],
+    "complete_diff": true,
+    "independent_rebuild": true,
+    "factory_roundtrip": true
+  },
+  "camera_written": false,
+  "card_written": false,
+  "hardware_validated": false
+}

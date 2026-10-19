@@ -1,0 +1,227 @@
+{
+  "status": "passed",
+  "total_cases": 371,
+  "groups": {
+    "independent_both_rows_initialization_four_combinations": 4,
+    "full_notify_hidden_row_edit_is_pending_and_independent": 4,
+    "full_notify_shown_row_edit_is_pending_and_independent": 4,
+    "left_boundary_stops_at_battery_column": 4,
+    "cross_new_and_original_columns_aligns_factory_cursor": 4,
+    "factory_confirm_commits_two_new_and_six_original_fields": 4,
+    "menu_discards_new_flags_without_any_set": 4,
+    "reentry_reloads_persisted_values_after_cancel": 4,
+    "denied_native_set_readback_restores_actual_state": 4,
+    "menu_from_each_new_column_row_never_commits": 12,
+    "full_rotary_path_clamps_four_columns": 24,
+    "original_six_checkbox_key_paths_differential": 34,
+    "other_8bit_keys_factory_dispatch": 241,
+    "factory_tick_focus_and_blur_per_row": 12,
+    "five_bin_header_original_geometry_no_text_or_polling": 1,
+    "independent_white_and_optional_red_shape_decode": 9,
+    "shared_five_bin_mapping_and_low_color_metadata": 2
+  },
+  "executed_steps": 97966,
+  "source_hashes": {
+    "work/p7000-v3.4.3/ui/verify_settings.py": "855eb2efecdee08fea590b5b22b40088ab844edc13f31fbce1fdd1ec00229d58",
+    "work/p7000-v3.4.3/ui/patch_settings.py": "a11b589a521c4ff5944695c34e81cfd752506bd4932c265a1ef4eaa59861efb6",
+    "work/p7000-v3.4.3/ui/vector5.py": "54ace424af48c91a5bc7c022ba5fe5249e736294a05f245a2cf793ab6cd01996",
+    "work/p7000-v3.4.2/ui/verify_settings.py": "e5976c3ac535a9c6067d729e8485cbb48036e89b75b97a36c5a3f196284ab1ba",
+    "work/p7000-v3.4.1/ui/patch_battery_ui.py": "b9ba801bcb6e2df805dfdc054b6037b619747e81bfe3baac8ae1f1ce7921d3b8",
+    "work/p7000-v3.4.1/ui/vector_battery.py": "2d2152ab17f0a9a44823ca091abd501c7812873127a72538703b9ee08894cffc",
+    "work/p7000-v3.4/ui/swf_tags.py": "37377dfa60fae4e619d46d16382e821e99dcb9ead088d1f2049cc47c64e2b11c",
+    "work/p7000-v3.1/ui/patch_ui.py": "f27103e2d1a60ef926b802588cf904186687f60f20ce83f155dbb4f0ab6cdec4"
+  },
+  "fws_hashes": {
+    "73": {
+      "input": "623830bf6a8a7da291ef17f71985036e0dde18f953ff0305d35a247e273981b9",
+      "output": "80c61e5b5e71d7c8af91c5bf614c46bcf2bf3c46d9fbc7e53837555f455458d7"
+    }
+  },
+  "resources": {
+    "73": {
+      "resource": 73,
+      "input_sha256": "623830bf6a8a7da291ef17f71985036e0dde18f953ff0305d35a247e273981b9",
+      "factory_sha256": "14b175c6c974de52d4e48efad7dc5575c5d27cfc1cef91bb78ff45b3b8f95770",
+      "output_sha256": "80c61e5b5e71d7c8af91c5bf614c46bcf2bf3c46d9fbc7e53837555f455458d7",
+      "changes": [
+        {
+          "function": "initialize",
+          "reason": "Initialize independent page-local battery column after factory fields",
+          "original_body_start": 144218,
+          "old_bytes": 1208,
+          "new_bytes": 2657
+        },
+        {
+          "function": "cursorMoveChange",
+          "reason": "Battery column -1 only; factory columns retain original handlers",
+          "original_body_start": 151310,
+          "old_bytes": 540,
+          "new_bytes": 598
+        },
+        {
+          "function": "cursorNowChange",
+          "reason": "Battery column -1 only; factory columns retain original handlers",
+          "original_body_start": 151869,
+          "old_bytes": 540,
+          "new_bytes": 600
+        },
+        {
+          "function": "checkMark",
+          "reason": "Battery column -1 only; factory columns retain original handlers",
+          "original_body_start": 149430,
+          "old_bytes": 912,
+          "new_bytes": 1174
+        },
+        {
+          "function": "checkSet",
+          "reason": "Battery column -1 only; factory columns retain original handlers",
+          "original_body_start": 150361,
+          "old_bytes": 930,
+          "new_bytes": 962
+        },
+        {
+          "function": "setMoniter",
+          "reason": "Battery column -1 only; factory columns retain original handlers",
+          "original_body_start": 152428,
+          "old_bytes": 1086,
+          "new_bytes": 1147
+        },
+        {
+          "function": "setCursor",
+          "reason": "Battery column -1 only; factory columns retain original handlers",
+          "original_body_start": 153533,
+          "old_bytes": 168,
+          "new_bytes": 242
+        },
+        {
+          "function": "leftCursor",
+          "reason": "Extend original minimum from0 to-1, retaining factory clamp and rotary deltas",
+          "original_body_start": 148649,
+          "old_bytes": 254,
+          "new_bytes": 242
+        }
+      ],
+      "blocks": [
+        {
+          "sprite": 75,
+          "old_actions": 15225,
+          "new_actions": 17209
+        }
+      ],
+      "graphics": {
+        "sprite_id": 95,
+        "root_depth": 4,
+        "container": "_mc_v343BatteryColumn",
+        "vector": {
+          "sprite_id": 94,
+          "shape_ids": [
+            89,
+            90,
+            91,
+            92
+          ],
+          "bar_sprite_id": 93,
+          "red_sprite_id": null,
+          "red_bar_name": null,
+          "bar_names": [
+            "_bar1",
+            "_bar2",
+            "_bar3",
+            "_bar4",
+            "_bar5"
+          ],
+          "root_depth": 4,
+          "container": "_unused",
+          "x": 570,
+          "y": 8,
+          "width": 48,
+          "height": 24,
+          "global_bounds": [
+            570,
+            618,
+            8,
+            32
+          ],
+          "bar_width": 6,
+          "bar_pitch": 7,
+          "bar_x": [
+            5,
+            12,
+            19,
+            26,
+            33
+          ],
+          "native_mapping": {
+            "100": 5,
+            "80": 4,
+            "65": 4,
+            "50": 3,
+            "25": 2,
+            "5": 1,
+            "2": 1
+          },
+          "red_native_estimates": [],
+          "shape_tag": 22,
+          "origin": "new five-bin vectors in camera-tested outline; not original Nikon art",
+          "precision": "native coarse estimates grouped for display; no finer measurement"
+        },
+        "header_bounds": [
+          366,
+          414,
+          201,
+          225
+        ],
+        "checkbox_positions": [
+          [
+            370,
+            256
+          ],
+          [
+            370,
+            308
+          ]
+        ],
+        "cursor_cell_global": [
+          360,
+          420
+        ],
+        "new_column_index": -1,
+        "existing_columns": [
+          0,
+          1,
+          2
+        ],
+        "factory_checkbox_sprite": 11,
+        "original_layout_preserved": true,
+        "no_new_text": true,
+        "native_fields": [
+          4096,
+          4098
+        ],
+        "commit_policy": "page-local independent pending flags; confirm writes, MENU cancels",
+        "scope": "native rasterization/long wording overlap not emulated"
+      },
+      "all_cfg_targets_valid": true,
+      "native_get_fields": [
+        4096,
+        4098
+      ],
+      "native_set_fields": [
+        4096,
+        4098
+      ],
+      "no_timer": true,
+      "other_factory_action_blocks_preserved": true,
+      "original_layout_preserved": true,
+      "source_bound_factory_baseline": "db946841a6ded0be1ffce830bc2fb88868cd109c58931f7c5af971252ea0a4b2",
+      "scope": "Offline only; physical keys/native bridge/renderer not executed"
+    }
+  },
+  "verification_boundary": "actual complete notifyKeyDown and rotate handlers with original cursor/check/confirm code; factory initialize and renderer/native bridge are explicit stubs",
+  "not_modeled": [
+    "actual native GET/SET parser and Flash",
+    "hardware repeat scheduler/physical keys",
+    "native rasterization and long localized label overdraw",
+    "sleep/recording/photo preview lifecycle"
+  ]
+}

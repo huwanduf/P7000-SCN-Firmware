@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "total_cases": 218,
+  "groups": {
+    "actual_native_values_preferences_and_low_red": 208,
+    "unprompted_reads_limited_to_one_hz": 2,
+    "suspension_recovery_low_red": 2,
+    "hidden_parent_no_reads": 2,
+    "two_info_states_are_independent": 2,
+    "actual_monitor_state_read_and_immediate_refresh": 2
+  },
+  "executed_steps": 24382,
+  "source_hashes": {
+    "work/p7000-v3.4.3/verify_osd.py": "88a41862271a93e530298b023106109d914c533eb31ff57620a5ec9eaa7d8224",
+    "work/p7000-v3.4.3/patch_osd.py": "b1aceb43d677d9029c32b060e66d65a02f66459c370f8919b7503600ed62099c",
+    "work/p7000-v3.4.3/ui/vector5.py": "54ace424af48c91a5bc7c022ba5fe5249e736294a05f245a2cf793ab6cd01996",
+    "work/p7000-v3.4.1/ui/patch_battery_ui.py": "b9ba801bcb6e2df805dfdc054b6037b619747e81bfe3baac8ae1f1ce7921d3b8",
+    "work/p7000-v3.4/ui/verify_battery_ui.py": "22408d55300af23980815a46bb2280610dccd54709cae57ebad49b0ab852ab93"
+  },
+  "fws_hashes": {
+    "26": {
+      "input": "10a3273f94fffbe4cffcf2b63c71665d1648ed2836eddf1dec27dd1581e12673",
+      "output": "6a69164542858cccae9738e426df8b25eee11904594340928181b1547b9ef624"
+    },
+    "69": {
+      "input": "36bc8a42a6bde8751d85239963e7c2a9d7e48a5fa7e59364dfb2a4077ebfb5f7",
+      "output": "bb317c7d6076e176ce78ba96e42147fc6e10f169d7fa4bfecd68ec4200b18997"
+    }
+  },
+  "not_modeled": [
+    "MCU freshness or physical battery capacity",
+    "camera rasterizer and full native OSD overlaps",
+    "native bridge and display-state event source"
+  ],
+  "native_mapping": {
+    "100": 5,
+    "80": 4,
+    "65": 4,
+    "50": 3,
+    "25": 2,
+    "5": 1,
+    "2": 1
+  },
+  "red_levels": [
+    5,
+    2
+  ]
+}

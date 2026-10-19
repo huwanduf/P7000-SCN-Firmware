@@ -1,0 +1,146 @@
+{
+  "status": "passed",
+  "baseline_sha256": "89fef5c84dba57897be26cb938c50693482997b1fcdef396ebb0f26301586900",
+  "tested_SEC0_sha256": "bb16233d670534e97eac0fc0ef182250ac361cef8052f2a8f9f143d68f00da7a",
+  "tested_engine_sha256": "2c5eca64729c0f8ab04215a71f846cdc0f76118ae301fadb495e61edf5ec6adb",
+  "counts": {
+    "original_148_registry_rows_preserved": 148,
+    "three_rows_and_absent_ids": 8,
+    "Thumb_bool_GET_all_surrounding_bytes": 512,
+    "Thumb_SET_two_byte_safe_aligned_and_unaligned": 2048,
+    "invalid_SET_no_write_or_empty_string_overread": 44,
+    "actual_ARM_Thumb_SET_GET_dispatch_all_modes": 168,
+    "actual_native_4097_pure_cache_GET": 20,
+    "actual_engine_invalid_or_readonly_SET_no_state_write": 15,
+    "P7C4_encode_decode_all_axes_ISO_two_bits": 12168,
+    "P7C2_P7C3_migration_preserves_parameters_and_owned_bit": 270,
+    "P7C1_three_schema_migration": 900,
+    "P7C4_WB_ISO_validity_domain": 4096,
+    "P7C4_unowned_retired_bit_rejected": 4,
+    "original_control_validity_domain_preserved": 7,
+    "inverse_corruption_rejected": 128,
+    "actual_outer_checksum_restore_gate": 8
+  },
+  "total_cases": 20544,
+  "thumb_callback_instructions": 51968,
+  "source_hashes": {
+    "work/p7000-v3.4.3/storage/verify_storage.py": "4e1f5b057f6178ccde15a859eca983373505682cb01c0e11b642394c23bd2065",
+    "work/p7000-v3.4.3/storage/build_native.py": "e1ae95cedc8f2f074f8c0acf821080808116b11ccc2dfe62ea19c070ccfba54c",
+    "work/p7000-v3.4.3/storage/settings.s": "572aae2c0a39e74b4c6a77ca4d8b4a885ee7e3a26d7e1ebe97a323c93aff0c2b",
+    "work/p7000-v3.4.3/storage/persistence.s": "beadd4417bb033068f3a3cba29befc45da63e2c957d0d29846b35c96e08442a5",
+    "work/p7000-v3.4.2/routing/verify_setting_dispatch.py": "02a0bd422cad7358e6865bef692435e85d440ba6a0bfdb5ecdeaf38c633b59f3",
+    "work/p7000-v3.4/native/test_battery_components.py": "9a46217d3ffdbf5739e1b77fdd4acbb655a747898f92c68553db35da7c73fc3c",
+    "work/p7000-v3.2/persistence/test_persistence_components.py": "9f2c3a5052f3606af5c2bace18c899eb5c0b3324c6c1cd0b9ad124f1278ca340",
+    "work/p7000-v1/v1/inline-validation/a32_runner.py": "ee947451a7af20b91a1e0c6c19204d11738ac183c125fddcaefd70d364027f7e",
+    "work/p7000-v3.3/flash/landscape.s": "f2051e69358789b675d3e1c3b32a60b6f483e8d4940870a0dbefda7092bb989b"
+  },
+  "parts": {
+    ".battery_lookup": [
+      "0x40218ba0",
+      40
+    ],
+    ".battery_callbacks": [
+      "0x40218bc8",
+      100
+    ],
+    ".battery_rows": [
+      "0x40218c2c",
+      36
+    ],
+    ".wb_record_router": [
+      "0x40218db4",
+      200
+    ],
+    ".landscape_permission": [
+      "0x40218e7c",
+      32
+    ]
+  },
+  "symbols": {
+    "original_lookup_continue": "0x40215d2c",
+    "$a": "0x40218e7c",
+    "$d": "0x40218e94",
+    "$t": "0x40218bc8",
+    "get_bool": "0x40218bce",
+    "set_bool": "0x40218be8",
+    "bad": "0x40218c12",
+    "battery_lookup": "0x40218ba0",
+    "battery_rows": "0x40218c2c",
+    "battery_show_get": "0x40218bc9",
+    "battery_hidden_get": "0x40218bcd",
+    "battery_show_set": "0x40218be3",
+    "battery_hidden_set": "0x40218be7",
+    "battery_percent_get": "0x40218c17",
+    "legacy_record_after_first_load": "0x401c6a10",
+    "validated_controls": "0x401dbe18",
+    "commit_after_state_load": "0x401dbe50",
+    "wb_record_router": "0x40218db4",
+    "wb_migrate_commit": "0x40218e4c",
+    "original_scene_pass": "0x401b26a0",
+    "original_scene_check": "0x401b262c",
+    "landscape_permission": "0x40218e7c"
+  },
+  "incoming_audit": [
+    {
+      "image": "baseline",
+      "source": "0x401b2628",
+      "target": "0x40218e5c",
+      "kind": "branch"
+    },
+    {
+      "image": "baseline",
+      "source": "0x401c6a0c",
+      "target": "0x40218db4",
+      "kind": "branch"
+    },
+    {
+      "image": "baseline",
+      "source": "0x401dbe4c",
+      "target": "0x40218e34",
+      "kind": "branch"
+    },
+    {
+      "image": "baseline",
+      "source": "0x40215d28",
+      "target": "0x40218ba0",
+      "kind": "branch"
+    },
+    {
+      "image": "candidate",
+      "source": "0x401b2628",
+      "target": "0x40218e7c",
+      "kind": "branch"
+    },
+    {
+      "image": "candidate",
+      "source": "0x401c6a0c",
+      "target": "0x40218db4",
+      "kind": "branch"
+    },
+    {
+      "image": "candidate",
+      "source": "0x401dbe4c",
+      "target": "0x40218e4c",
+      "kind": "branch"
+    },
+    {
+      "image": "candidate",
+      "source": "0x40215d28",
+      "target": "0x40218ba0",
+      "kind": "branch"
+    }
+  ],
+  "record_bytes": 12,
+  "normal_PC_and_other_control_regions_unchanged": true,
+  "stubs": [
+    "bounded ASCII strcmp and decimal parser in native dispatch tests",
+    "memcpy only in outer restore tests"
+  ],
+  "limits": [
+    "bounded ARM/Thumb ISA interpreter; no physical CPU execution",
+    "no camera, SD, actual Flash write/power cycle, GUI or native MCU communication"
+  ],
+  "camera_written": false,
+  "card_written": false,
+  "firmware_emitted": false
+}
